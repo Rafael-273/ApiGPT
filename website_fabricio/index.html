@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js" defer></script>
+    <title>GPT</title>
+</head>
+<body>
+    
+    <div class="menu">
+        <img src="img/ChatGPT_logo.svg.png" alt="">
+        <button onclick="scrollToGPT()">Comece já!</button>
+    </div>
+
+    <div class="title_banner">
+        <h5>Chat GPT - A New <br>Intelligence</h5>
+    </div>
+
+
+    <div class="carousel">
+      <div class="slideshow-container">
+        <div class="mySlides fade">
+          <img src="img/homem-tiro-medio-usando-oculos-vr.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides fade">
+
+          <img src="img/mulher-usando-simulador-de-realidade-virtual_23-2148910263.avif" style="width:100%">
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br>
+
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+    </div>
+
+    <div class="contentGPT" id="GPT">
+        <h5 class="titleGPT">Experimente Agora!</h5>
+        <div>
+          <textarea id="inputQuestion" rows="10" placeholder="Pergunte Algo"></textarea>
+          <textarea id="result" rows="10" disabled placeholder="GPT Chat"></textarea>
+        </div>
+    </div>
+
+</body>
+</html>
